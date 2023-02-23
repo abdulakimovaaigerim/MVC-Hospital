@@ -1,4 +1,4 @@
-package peaksoft.configuration.entities;
+package peaksoft.entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -21,7 +21,7 @@ public class Patient {
 
     @Id
     @GeneratedValue(strategy = SEQUENCE, generator = "department_id_gen")
-    @SequenceGenerator(name = "department_id_gen", sequenceName = "department_id_seq", allocationSize = 10)
+    @SequenceGenerator(name = "department_id_gen", sequenceName = "department_id_seq", allocationSize = 1)
     private Long id;
 
     @Column(name = "first_name")
@@ -39,5 +39,15 @@ public class Patient {
 
     @OneToMany(mappedBy = "patient", cascade = {ALL}, fetch = FetchType.LAZY)
     private List<Appointment> appointments;
+
+    private String image;
+
+    public Patient(String firstName, String lastName, String phoneNumber, Gender gender, String image) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.gender = gender;
+        this.image = image;
+    }
 
 }

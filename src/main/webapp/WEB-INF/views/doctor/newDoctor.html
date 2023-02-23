@@ -20,7 +20,7 @@
 <div class="card" style="width: 18rem;">
     <div style="width: 50%; margin: 0 auto">
 
-        <form th:action="@{/doctors/{hospitalId}/save(hospitalId=${hospitalId})}" th:object="${n}" method="POST">
+        <form th:action="@{/doctors/{hospitalId}/save(hospitalId=${hospitalId})}" th:object="${newDoctor}" method="POST">
             <input type="hidden" th:field="*{id}">
             <div>
                 <label for="firstName">firstName</label>
@@ -39,16 +39,6 @@
                 <input type="text" th:field="*{email}" id="email">
             </div>
             <div>
-                <label for="imageLink">ImageLink</label>
-                <input type="text" th:field="*{image}" id="imageLink">
-            </div>
-            <div>
-                <select th:field="*{departmentId}" multiple required>
-                    <option value="">--Select a department--</option>
-                    <option th:each="department : ${departments}" th:value="${department.id}"
-                            th:text="${department.name}"></option>
-                </select>
-
                 <div>
                     <input type="submit" value="Save"/>
                 </div>

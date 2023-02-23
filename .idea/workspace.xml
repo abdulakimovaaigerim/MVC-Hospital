@@ -1,17 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="MVC-Hospital:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6aeedc5e-d473-46c7-b3eb-451e0b857338" name="Changes" comment="" />
+    <list default="true" id="6aeedc5e-d473-46c7-b3eb-451e0b857338" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/configuration/DispatcherServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/configuration/DispatcherServletConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/configuration/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/configuration/HibernateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/configuration/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/configuration/WebAppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/AppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/AppointmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/DepartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/DoctorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/HospitalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/HospitalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Hospital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Hospital.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/enums/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/enums/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/AppointmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/DepartmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/DoctorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/DoctorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/HospitalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/HospitalRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/AppointmentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/AppointmentRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/DepartmentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/DepartmentRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/DoctorRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/DoctorRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/HospitalRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/HospitalRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/PatientRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/PatientRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/AppointmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/DepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/DoctorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/HospitalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/HospitalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/AppointmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/AppointmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/DepartmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/DoctorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/HospitalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/HospitalServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/datasource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasource.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/appointment/savePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/appointment/savePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/appointment/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/appointment/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/department/getAllDepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/department/getAllDepartments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/department/newDepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/department/newDepartments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/department/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/department/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doctor/getAllDoctors.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doctor/getAllDoctors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doctor/newDoctor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doctor/newDoctor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doctor/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doctor/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hospital/getAllHospitals.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hospital/getAllHospitals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hospital/newHospital.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hospital/newHospital.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hospital/updateHospital.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hospital/updateHospital.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/patient/getAllPatient.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/patient/getAllPatient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/patient/savePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/patient/savePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/patient/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/patient/update.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -21,19 +103,136 @@
     </option>
   </component>
   <component name="ProjectId" id="2Lrn0UhEEKWE8oT2bEJK5nxuaPi" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/adina/IdeaProjects/MVC-Hospital/src/main/java/peaksoft&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;5ff3766aae060bcf0ef47687b24b3c0a&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="peaksoft.enums" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\adina\IdeaProjects\MVC-Hospital\src\main\java\peaksoft" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\adina\IdeaProjects\MVC-Hospital\src\main\webapp\WEB-INF\views" />
+      <recent name="C:\Users\adina\IdeaProjects\MVC-Hospital\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 11.0.0-M1" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.0-M1" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="MVC-Hospital:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="5cddf73d-0a32-4a58-afc4-9910c2c07286" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61786" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="MVC-Hospital:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,7 +241,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676637850542</updated>
+      <workItem from="1676637851715" duration="1870000" />
+      <workItem from="1676642256074" duration="902000" />
+      <workItem from="1676703156487" duration="4392000" />
+      <workItem from="1676729289905" duration="1782000" />
+      <workItem from="1676737370243" duration="4014000" />
+      <workItem from="1676743787936" duration="22000" />
+      <workItem from="1676744304389" duration="16000" />
+      <workItem from="1676816868128" duration="3765000" />
+      <workItem from="1676871961933" duration="1549000" />
+      <workItem from="1676874607503" duration="27535000" />
+      <workItem from="1676908185068" duration="33138000" />
+      <workItem from="1676989110566" duration="6898000" />
+      <workItem from="1677002544312" duration="5286000" />
+      <workItem from="1677048279078" duration="1947000" />
+      <workItem from="1677050607170" duration="8602000" />
+      <workItem from="1677065387565" duration="9538000" />
+      <workItem from="1677083626839" duration="4315000" />
+      <workItem from="1677088385887" duration="893000" />
+      <workItem from="1677089395402" duration="116000" />
+      <workItem from="1677128306532" duration="8518000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

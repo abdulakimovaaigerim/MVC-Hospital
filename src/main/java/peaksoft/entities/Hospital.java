@@ -1,4 +1,4 @@
-package peaksoft.configuration.entities;
+package peaksoft.entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -20,17 +20,41 @@ public class Hospital {
 
     @Id
     @GeneratedValue(strategy = SEQUENCE, generator = "department_id_gen")
-    @SequenceGenerator(name = "department_id_gen", sequenceName = "department_id_seq", allocationSize = 10)
+    @SequenceGenerator(name = "department_id_gen", sequenceName = "department_id_seq", allocationSize = 1)
     private Long id;
+
     private String name;
     private String address;
-    @OneToMany(cascade = {ALL}, fetch = LAZY)
+    private String image;
+
+    @OneToMany(cascade = {ALL}, fetch = LAZY,mappedBy = "hospital")
     private List<Doctor> doctors;
+
     @OneToMany(mappedBy = "hospital", fetch = LAZY)
     private List<Patient> patients;
-    @OneToMany(cascade = {ALL}, fetch = LAZY)
+
+    @OneToMany(cascade = {ALL}, fetch = LAZY,mappedBy = "hospital")
     private List<Department> departments;
+
     @OneToMany(cascade = {ALL}, fetch = LAZY)
     private List<Appointment> appointments;
+
+    public Hospital(String name, String address, String image) {
+        this.name = name;
+        this.address = address;
+        this.image = image;
+    }
+
+    public void setDepartment(Department department){
+        this.departments.add(department);
+    }
+
+    public void setDoctor(Doctor doctor) {
+        this.doctors.add(doctor);
+    }
+
+    public void addAppointment(Appointment newAppointment) {
+        this.appointments.add(newAppointment);
+    }
 
 }

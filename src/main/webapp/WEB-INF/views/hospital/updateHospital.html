@@ -1,10 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<form th:action="@{/hospitals/{id}/update(id=${odlHospital.id})}"
+      th:object="${odlHospital}"
+      th:method="POST">
+
+    <div>
+        <label>
+            <input th:field="*{name}" placeholder="Hospital Name">
+        </label>
+        <div>
+
+        </div>
+        <label>
+            <input th:field="*{address}" placeholder="Hospital address">
+        </label>
+    </div>
+    <div>
+        <label>
+            <input th:field="*{image}" placeholder="Image">
+        </label>
+    </div>
+    <div>
+        <input type="submit" value="update">
+    </div>
+</form>
+
 </body>
 </html>

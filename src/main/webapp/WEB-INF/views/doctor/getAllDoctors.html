@@ -16,25 +16,30 @@
     <thead>
     <tr>
         <th scope="col">id</th>
-        <th scope="col">Departments</th>
-        <th scope="col">Doctors</th>
+        <th scope="col">First Name</th>
+        <th scope="col">LastName</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Position</th>
         <th scope="col">Delete</th>
         <th scope="col">Update</th>
     </tr>
     </thead>
-    <tbody th:each="doctor:${doctors}">
+    <tbody th:each="doctor :${doctors}">
     <tr>
-        <th scope="row" th:text="${doctor.id}">Id</th>
-        <td th:text="${doctor.firstName}">First Name</td>
-        <td><a style="color: black" th:href="@{/doctors/{id}/get(id=${doctor.doctorId})}">Doctors</a></td>
+        <td  th:text="${doctor.id}">Id</td>
+        <td th:text="${doctor.firstName}">FirstName</td>
+        <td th:text="${doctor.lastName}">LastName</td>
+        <td th:text="${doctor.email}">Email</td>
+        <td th:text="${doctor.position}">Position</td>
+<!--        <td><a style="color: black" th:href="@{/departments/{id}/get(id=${hospitalId})}">Doctors</a></td>-->
         <td>
-            <form th:method="post" th:action="@{/doctors/deleteDoctor/{doctorId}(doctorId=${doctor.id})}">
+            <form th:method="post" th:action="@{/doctors/{hospitalId}/{doctorId}/delete(hospitalId=${hospitalId},doctorId=${doctor.id})}">
                 <input type="submit" th:value="Delete">
             </form>
         </td>
         <td>
             <a class="btn btn-outline-primary" role="button"
-               th:href="@{/doctors/{id}/edit (id=${doctor.id})}">Update</a>
+               th:href="@{/doctors/{id}/{doctorId}/edit (id=${hospitalId},doctorId=${doctor.id})}">Update</a>
 
         </td>
     </tr>
@@ -45,7 +50,7 @@
 <br/>
 <br/>
 <p style="text-align:center;">
-    <a class="btn btn-outline-primary" role="button" th:href="@{/doctors/{id}/saveDoctor(id=${doctors})}">Add new doctor</a></p>
+    <a class="btn btn-outline-primary" role="button" th:href="@{/doctors/{hospitalId}/new (hospitalId=${hospitalId})}">Add new doctor</a></p>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

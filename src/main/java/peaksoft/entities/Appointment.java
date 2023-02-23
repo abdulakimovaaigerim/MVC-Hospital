@@ -1,4 +1,4 @@
-package peaksoft.configuration.entities;
+package peaksoft.entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -28,4 +28,14 @@ public class Appointment {
 
     @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Department department;
+    private String image;
+
+    public Appointment(LocalDate date, String image) {
+        this.date = date;
+        this.image = image;
+    }
+
+    public CharSequence getDate1() {
+        return null;
+    }
 }
