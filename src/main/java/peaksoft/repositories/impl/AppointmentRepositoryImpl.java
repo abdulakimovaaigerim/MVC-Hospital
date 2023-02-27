@@ -17,8 +17,9 @@ public class AppointmentRepositoryImpl implements AppointmentRepository {
     @PersistenceContext
     private EntityManager entityManager;
 
+
     @Override
-    public void saveAppointment(Long hospitalId, Appointment appointment) {
+    public void saveAppointment( Appointment appointment) {
         entityManager.persist(appointment);
     }
 
@@ -41,9 +42,10 @@ public class AppointmentRepositoryImpl implements AppointmentRepository {
     }
 
     @Override
+    @Transactional
     public void removeAppointmentById(Long id) {
-        Appointment appointment = entityManager.find(Appointment.class, id);
-        entityManager.remove(appointment);
+    entityManager.createQuery("delete from Appointment  a where a.id=:id").setParameter("id",id).executeUpdate();
+
     }
 
 }

@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import peaksoft.entities.Patient;
 import peaksoft.repositories.PatientRepository;
-
 import java.util.List;
 
 @Repository
@@ -18,7 +17,9 @@ public class PatientRepositoryImpl implements PatientRepository {
 
     @Override
     public void savePatient(Patient patient) {
+        System.out.println("patient.getPhoneNumber().startsWith(\"+996\") = " + patient.getPhoneNumber().startsWith("+996"));
         entityManager.persist(patient);
+
     }
 
     @Override
@@ -28,7 +29,7 @@ public class PatientRepositoryImpl implements PatientRepository {
 
     @Override
     public List<Patient> getAllPatient(Long id) {
-        return entityManager.createQuery("select d from Patient d join d.hospital h where h.id=:id",Patient.class).setParameter("id",id).getResultList();
+        return entityManager.createQuery("select d from Patient d join d.hospital h where h.id=:id", Patient.class).setParameter("id", id).getResultList();
     }
 
     @Override
@@ -39,6 +40,7 @@ public class PatientRepositoryImpl implements PatientRepository {
         oldPatient.setPhoneNumber(patient.getPhoneNumber());
         oldPatient.setGender(patient.getGender());
         entityManager.merge(oldPatient);
+
     }
 
     @Override

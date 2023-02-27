@@ -10,58 +10,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6aeedc5e-d473-46c7-b3eb-451e0b857338" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doctor/doctor_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3ea01012-b3ca-4ea0-a21c-d6603e47d233.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3ea01012-b3ca-4ea0-a21c-d6603e47d233.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3ea01012-b3ca-4ea0-a21c-d6603e47d233/storage_v2/_src_/database/hospital.Ov7m7Q/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3ea01012-b3ca-4ea0-a21c-d6603e47d233/storage_v2/_src_/database/hospital.Ov7m7Q/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/configuration/DispatcherServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/configuration/DispatcherServletConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/configuration/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/configuration/HibernateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/configuration/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/configuration/WebAppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/AppointmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/AppointmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/DepartmentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/DoctorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/HospitalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/HospitalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/contoller/PatientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Appointment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Department.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Doctor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Hospital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Hospital.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/entities/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/enums/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/enums/Gender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/AppointmentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/DepartmentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/DoctorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/DoctorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/HospitalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/HospitalRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/PatientRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/AppointmentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/AppointmentRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/DepartmentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/DepartmentRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/DoctorRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/DoctorRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/HospitalRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/HospitalRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/PatientRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/repositories/impl/PatientRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/AppointmentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/DepartmentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/DoctorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/HospitalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/HospitalService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/PatientService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/AppointmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/AppointmentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/DepartmentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/DoctorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/HospitalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/HospitalServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/peaksoft/servies/impl/PatientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/datasource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/datasource.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/appointment/getAllAppointment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/appointment/getAllAppointment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/appointment/savePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/appointment/savePage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/appointment/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/appointment/update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/department/getAllDepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/department/getAllDepartments.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/department/newDepartments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/department/newDepartments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/department/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/department/update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doctor/getAllDoctors.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doctor/getAllDoctors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doctor/newDoctor.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doctor/newDoctor.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doctor/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/doctor/update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hospital/getAllHospitals.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hospital/getAllHospitals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hospital/newHospital.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hospital/newHospital.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hospital/updateHospital.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hospital/updateHospital.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/patient/getAllPatient.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/patient/getAllPatient.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/patient/savePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/patient/savePage.html" afterDir="false" />
@@ -141,6 +124,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\adina\IdeaProjects\MVC-Hospital\src\main\webapp\WEB-INF\views" />
+      <recent name="C:\Users\adina\IdeaProjects\MVC-Hospital\src\main\webapp\WEB-INF\views\main" />
       <recent name="C:\Users\adina\IdeaProjects\MVC-Hospital\src\main\webapp\WEB-INF" />
     </key>
   </component>
@@ -260,7 +244,10 @@
       <workItem from="1677083626839" duration="4315000" />
       <workItem from="1677088385887" duration="893000" />
       <workItem from="1677089395402" duration="116000" />
-      <workItem from="1677128306532" duration="8518000" />
+      <workItem from="1677128306532" duration="9441000" />
+      <workItem from="1677137856809" duration="29688000" />
+      <workItem from="1677302973000" duration="20609000" />
+      <workItem from="1677461704727" duration="750000" />
     </task>
     <servers />
   </component>

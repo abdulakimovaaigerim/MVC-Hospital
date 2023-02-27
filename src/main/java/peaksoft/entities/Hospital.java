@@ -4,10 +4,9 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 import java.util.List;
 
-import static jakarta.persistence.CascadeType.ALL;
+import static jakarta.persistence.CascadeType.*;
 import static jakarta.persistence.FetchType.LAZY;
 import static jakarta.persistence.GenerationType.SEQUENCE;
 
@@ -27,13 +26,13 @@ public class Hospital {
     private String address;
     private String image;
 
-    @OneToMany(cascade = {ALL}, fetch = LAZY,mappedBy = "hospital")
+    @OneToMany(cascade = {ALL}, fetch = LAZY, mappedBy = "hospital")
     private List<Doctor> doctors;
 
-    @OneToMany(mappedBy = "hospital", fetch = LAZY)
+    @OneToMany(mappedBy = "hospital", fetch = LAZY,cascade = ALL)
     private List<Patient> patients;
 
-    @OneToMany(cascade = {ALL}, fetch = LAZY,mappedBy = "hospital")
+    @OneToMany(cascade = {ALL}, fetch = LAZY, mappedBy = "hospital")
     private List<Department> departments;
 
     @OneToMany(cascade = {ALL}, fetch = LAZY)
@@ -45,7 +44,7 @@ public class Hospital {
         this.image = image;
     }
 
-    public void setDepartment(Department department){
+    public void setDepartment(Department department) {
         this.departments.add(department);
     }
 
@@ -57,4 +56,7 @@ public class Hospital {
         this.appointments.add(newAppointment);
     }
 
+    public void addPatient(Patient patient) {
+        this.patients.add(patient);
+    }
 }

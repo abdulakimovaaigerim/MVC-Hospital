@@ -45,8 +45,4 @@ public class DoctorServiceImpl implements DoctorService {
         doctorRepository.removeDoctorById(id);
     }
 
-    @Override
-    public void assignDoctor(Long doctorId, Long departmentId) {
-        doctorRepository.assignDoctor(doctorId, departmentId);
-    }
 }

@@ -5,10 +5,13 @@ import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import peaksoft.entities.Department;
+import peaksoft.entities.Doctor;
 import peaksoft.entities.Hospital;
 import peaksoft.repositories.DepartmentRepository;
 
+import java.io.IOException;
 import java.util.List;
+import java.util.Objects;
 
 @Repository
 @Transactional
@@ -51,6 +54,30 @@ public class DepartmentRepositoryImpl implements DepartmentRepository {
     public void removeDepartmentById(Long id) {
         Department department = entityManager.find(Department.class, id);
         entityManager.remove(department);
+    }
+
+
+    @Override
+    public void assignDoctor(Long doctorId, Long departmentId) {
+        try {
+            Doctor doctor = entityManager.find(Doctor.class, doctorId);
+            Department department = entityManager.find(Department.class, departmentId);
+
+            if (department.getId() != null){
+                for (Doctor d : department.getDoctors()) {
+                    if (Objects.equals(d.getId(), departmentId));
+                    throw new IOException("This doctor already exists!");
+
+                }
+            }
+            doctor.addDepartment(department);
+            department.addDoctor(doctor);
+            entityManager.merge(department);
+            entityManager.merge(doctor);
+
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 
 }

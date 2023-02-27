@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import peaksoft.enums.Gender;
-
 import java.util.List;
 
 import static jakarta.persistence.CascadeType.*;
@@ -32,22 +31,24 @@ public class Patient {
 
     @Column(name = "phone_number")
     private String phoneNumber;
+
     private Gender gender;
+
+    @Column(unique=true)
+    private String email;
 
     @ManyToOne(cascade = {REFRESH, DETACH, MERGE, PERSIST}, fetch = FetchType.EAGER)
     private Hospital hospital;
 
-    @OneToMany(mappedBy = "patient", cascade = {ALL}, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "patient", cascade = {REFRESH, MERGE, DETACH, PERSIST}, fetch = FetchType.LAZY)
     private List<Appointment> appointments;
 
-    private String image;
-
-    public Patient(String firstName, String lastName, String phoneNumber, Gender gender, String image) {
+    public Patient(String firstName, String lastName, String phoneNumber, Gender gender, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
         this.gender = gender;
-        this.image = image;
+        this.email = email;
     }
 
 }

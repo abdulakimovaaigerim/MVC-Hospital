@@ -4,11 +4,9 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-import peaksoft.entities.Department;
 import peaksoft.entities.Doctor;
 import peaksoft.entities.Hospital;
 import peaksoft.repositories.DoctorRepository;
-
 import java.util.List;
 
 @Repository
@@ -56,13 +54,4 @@ public class DoctorRepositoryImpl implements DoctorRepository {
 
     }
 
-    @Override
-    public void assignDoctor(Long doctorId, Long departmentId) {
-        Doctor doctor = entityManager.find(Doctor.class,doctorId);
-        Department department = entityManager.find(Department.class,departmentId);
-        doctor.addDepartment(department);
-        department.addDoctor(doctor);
-        entityManager.merge(doctor);
-        entityManager.merge(department);
-    }
 }

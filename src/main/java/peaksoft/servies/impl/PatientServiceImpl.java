@@ -1,8 +1,11 @@
 package peaksoft.servies.impl;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import peaksoft.entities.Hospital;
 import peaksoft.entities.Patient;
+import peaksoft.repositories.HospitalRepository;
 import peaksoft.repositories.PatientRepository;
 import peaksoft.servies.PatientService;
 
@@ -10,16 +13,18 @@ import java.util.List;
 
 @Service
 @Transactional
+@RequiredArgsConstructor
 public class PatientServiceImpl implements PatientService {
 
     private final PatientRepository patientRepository;
+    private final HospitalRepository hospitalRepository;
 
-    public PatientServiceImpl(PatientRepository patientRepository) {
-        this.patientRepository = patientRepository;
-    }
 
     @Override
-    public void savePatient(Patient patient) {
+    public void savePatient(Long hospitalId, Patient patient) {
+        Hospital existHospital = hospitalRepository.getHospitalById(hospitalId);
+        existHospital.addPatient(patient);
+        patient.setHospital(existHospital);
         patientRepository.savePatient(patient);
     }
 

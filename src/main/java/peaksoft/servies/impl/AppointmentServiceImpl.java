@@ -7,8 +7,6 @@ import peaksoft.entities.Hospital;
 import peaksoft.repositories.*;
 import peaksoft.servies.AppointmentService;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Service
@@ -33,15 +31,12 @@ public class AppointmentServiceImpl implements AppointmentService {
     public void saveAppointment(Long hospitalId, Appointment appointment) {
         Hospital hospital = hospitalRepository.getHospitalById(hospitalId);
         Appointment newAppointment = new Appointment();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        LocalDate localDate = LocalDate.parse(appointment.getDate1(), formatter);
-        newAppointment.setDate(localDate);
-        newAppointment.setId(appointment.getId());
-        newAppointment.setPatient(patientRepository.getPatientById(appointment.getPatient().getId()));
-        newAppointment.setDoctor(doctorRepository.getDoctorById(appointment.getDoctor().getId()));
-        newAppointment.setDepartment(departmentRepository.getDepartmentById(appointment.getDepartment().getId()));
+        newAppointment.setDate(appointment.getDate());
+        newAppointment.setPatient(patientRepository.getPatientById(appointment.getPatientId()));
+        newAppointment.setDoctor(doctorRepository.getDoctorById(appointment.getDoctorId()));
+        newAppointment.setDepartment(departmentRepository.getDepartmentById(appointment.getDepartmentId()));
         hospital.addAppointment(newAppointment);
-        appointmentRepository.saveAppointment(hospitalId, newAppointment);
+        appointmentRepository.saveAppointment(newAppointment);
     }
 
     @Override
@@ -60,7 +55,11 @@ public class AppointmentServiceImpl implements AppointmentService {
     }
 
     @Override
-    public void removeAppointmentById(Long id) {
+    public void removeAppointmentById(Long id,Long hospitalId) {
+        Appointment appointment = appointmentRepository.getAppointmentById(id);
+        hospitalRepository.getHospitalById(hospitalId).getAppointments().remove(appointment);
+        appointment.getDoctor().getAppointments().remove(appointment);
+        appointment.getPatient().getAppointments().remove(appointment);
         appointmentRepository.removeAppointmentById(id);
     }
 

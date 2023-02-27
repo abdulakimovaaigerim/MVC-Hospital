@@ -16,26 +16,32 @@ public class Appointment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "company_id_gen")
-    @SequenceGenerator(name = "company_id_gen", sequenceName = "company_id_seq", allocationSize = 1, initialValue = 10)
+    @SequenceGenerator(name = "company_id_gen", sequenceName = "company_id_seq", allocationSize = 1)
+
     private Long id;
+    @Temporal(TemporalType.DATE)
     private LocalDate date;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER,cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.REFRESH,CascadeType.DETACH})
     private Patient patient;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER,cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.REFRESH,CascadeType.DETACH})
     private Doctor doctor;
 
-    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToOne(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.REFRESH,CascadeType.DETACH})
     private Department department;
-    private String image;
 
-    public Appointment(LocalDate date, String image) {
+    @Transient
+    private Long doctorId;
+
+    @Transient
+    private Long departmentId;
+
+    @Transient
+    private Long patientId;
+
+    public Appointment(LocalDate date) {
         this.date = date;
-        this.image = image;
     }
 
-    public CharSequence getDate1() {
-        return null;
-    }
 }

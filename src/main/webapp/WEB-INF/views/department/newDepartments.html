@@ -2,17 +2,16 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Main Page</title>
+    <title>Save Departments</title>
 </head>
 <body>
 
 <form th:method="POST" th:action="@{/departments/{id}/save (id=${hospitalId})}" th:object="${newDepartment}">
 
     <div class="mb-3">
-        <label for="text" class="form-label">Name</label>
-        <input type="text" class="form-control" id="text" th:field="*{name}">
+        <label for="name">name</label>
+        <input type="text" th:field="*{name}" id="name">
     </div>
-
 
     <button type="submit" class="btn btn-primary">Save</button>
 
